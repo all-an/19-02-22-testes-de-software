@@ -1,0 +1,19 @@
+postgres://bzjkecbsgsrmqs:327b91a822cdc23bb717eef439acb40735c12e14f9bc51acc2fc6efceef57707@ec2-3-212-143-188.compute-1.amazonaws.com:5432/d3miip4u2lghf4
+
+user >>> bzjkecbsgsrmqs
+
+:
+
+password >>> 327b91a822cdc23bb717eef439acb40735c12e14f9bc51acc2fc6efceef57707
+
+@
+
+server >>> ec2-3-212-143-188.compute-1.amazonaws.com
+
+:
+
+port >>> 5432
+
+/
+
+database >>> d3miip4u2lghf4
