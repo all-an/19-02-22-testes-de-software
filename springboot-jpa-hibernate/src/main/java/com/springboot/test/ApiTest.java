@@ -3,8 +3,9 @@ package com.springboot.test;
 import com.springboot.entities.User;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
+import org.mockito.internal.matchers.NotNull;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
@@ -77,5 +78,34 @@ public class ApiTest {
                 body("phone", equalTo("988888888")).
                 body("password", equalTo("123456"));
     }
+
+    @Test
+    public void getUserVerifyingComplexBodies() {
+        // http://localhost:8080/users/
+        String endpoint = "http://localhost:8080/users/";
+        given().when().get(endpoint).then().
+                assertThat().statusCode(200).
+                body("size()", greaterThan(0));
+    }
+
+    @Test
+    public void getUserVerifyingNotNull() {
+        String endpoint = "http://localhost:8080/users/";
+        given().when().get(endpoint).then().
+                assertThat().statusCode(200).
+                body("name", everyItem(notNullValue()));
+    }
+
+    @Test
+    public void verifyingHeader() {
+        String endpoint = "http://localhost:8080/users/";
+        given().when().get(endpoint).then().
+                assertThat().statusCode(200).
+                body("name", everyItem(notNullValue()));
+    }
+
+
+
+
 
 }

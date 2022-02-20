@@ -46,7 +46,6 @@
 ```java
 @Test
 public void getUsers() {
-    // http://localhost:8080/users/
     String endpoint = "http://localhost:8080/users/";
     var response = given().when().get(endpoint).then();
     response.log().body();
@@ -54,7 +53,6 @@ public void getUsers() {
 
 @Test
 public void getUser() {
-    // http://localhost:8080/users/
     String endpoint = "http://localhost:8080/users/1";
     var response = given().when().get(endpoint).then();
     response.log().body();
@@ -76,7 +74,6 @@ public void getUserAsserting() {
 ```java
 @Test
 public void getUserAssertingResponseBody() {
-    // http://localhost:8080/users/
     String endpoint = "http://localhost:8080/users/1"; // TODO entender queryParam()
     given().when().get(endpoint).then().log().body();
 }
@@ -99,7 +96,6 @@ public void getUserAssertingResponseBody() {
 ```java
 @Test
 public void getUserAssertingField() {
-    // http://localhost:8080/users/
     String endpoint = "http://localhost:8080/users/1";
     given().when().get(endpoint).then().
             assertThat().statusCode(200).
@@ -109,6 +105,45 @@ public void getUserAssertingField() {
             body("phone", equalTo("988888888")).
             body("password", equalTo("123456"));
 }
+```
+
+## Asserting complex fields:
+
+```java
+    @Test
+    public void getUserVerifyingComplexBodies() {
+        String endpoint = "http://localhost:8080/users/";
+        given().when().get(endpoint).then().
+                assertThat().statusCode(200).
+                body("size()", greaterThan(0));
+    }
+```
+
+### POST com o nome nulo
+
+```java
+@Test
+public void getUserVerifyingNotNull() {
+    String endpoint = "http://localhost:8080/users/";
+    given().when().get(endpoint).then().
+            assertThat().statusCode(200).
+            body("name", everyItem(notNullValue()));
+}
+```
+
+```json
+{
+        "email": "allan@allan.com",
+        "phone": "1133322222",
+        "password": "11111"
+}
+```
+### resultado:
+```bash
+java.lang.AssertionError: 1 expectation failed.
+JSON path name doesn't match.
+Expected: every item is not null
+Actual: <[Allan Pereira Abrahão, Alex Green, null]>
 ```
 
 ## POST :
