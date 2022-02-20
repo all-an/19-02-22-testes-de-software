@@ -2,7 +2,7 @@
 
 - [REST Assured](https://rest-assured.io/)
 - [Selenium](https://www.selenium.dev/documentation/webdriver/getting_started/)
-- [JMeter](https://jmeter.apache.org/usermanual/get-started.html)] 
+- [JMeter](https://jmeter.apache.org/usermanual/get-started.html)
 
 ## Requisitos do projeto:
 
@@ -210,7 +210,36 @@ public void getDeserializedBody() {s
 ## POST :
 
 ```java
-// ERRO POST TEXT / JSON SOLUCIONAR
+// ERRO POST TEXT / JSON SOLUCIONAR queryParam()
+```
+
+# Selenium:
+
+### Iniciando com o chrome webdriver:
+
+```java
+Scanner scanner = new Scanner(System.in);
+// Set the property for webdriver.chrome.driver to be the location to your local download of chromedriver
+System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
+
+// Create new instance of ChromeDriver
+WebDriver driver = new ChromeDriver();
+
+// And now use this to visit Google
+driver.get("http://www.google.com");
+
+// Find the text input element by its name
+WebElement element = driver.findElement(By.name("q"));
+
+// Enter something to search for
+element.sendKeys("Queijo!");
+
+// Now submit the form
+element.submit();
+
+scanner.nextLine();
+//Close the browser
+driver.quit();
 ```
 
 ## API do Julio de Lima e do Antonio Montanha utilizada para os Testes sob autorização de:
