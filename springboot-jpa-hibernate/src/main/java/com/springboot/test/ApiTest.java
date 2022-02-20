@@ -1,6 +1,5 @@
 package com.springboot.test;
 
-import com.google.gson.Gson;
 import com.springboot.entities.User;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
@@ -37,19 +36,12 @@ public class ApiTest {
 //        response.log().body();
 //    }
 //
-//    @Test
-//    public void createUser(){
-//        String endpoint = "http://localhost:8080/users/";
-//        String body = """
-//                {
-//                    "name": "Allan",
-//                    "email": "a@gmail.com",
-//                    "phone": "252342",
-//                    "password": "789789676252342"
-//                }
-//                """;
-//        var response = given().body(body).when().post(endpoint).then();
-//        response.log().body();
-//    }
+    @Test
+    public void createUser(){
+        String endpoint = "http://localhost:8080/users/";
+        User user = new User("Allan", "allan@gmail.com", "345345345", "98989898");
+        var response = given().body(user).when().post(endpoint).then();
+        response.log().body();
+    }
 
 }
