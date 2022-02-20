@@ -1,4 +1,8 @@
-## 19-02-22-testes-de-software
+## Reforçando Conhecimentos em Testes de Software 
+
+- REST Assured
+- Selenium
+- JMeter
 
 ## Requisitos do projeto:
 
@@ -8,6 +12,9 @@
 - JUnit Jupiter 5.7
 - Spring Boot 2
 - H2 Database
+- Selenium Server 3.11
+- Selenium ChromeDriver 3.11
+- Spring Boot Test Autoconfigure 2.6.3
 
 ## Minha api utilizada:
 
@@ -16,6 +23,19 @@
 ## Dependências Necessárias:
 
 ```xml
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>3.11.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-chrome-driver</artifactId>
+    <version>3.11.0</version>
+</dependency>
+
 <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
     <groupId>io.rest-assured</groupId>
