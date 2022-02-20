@@ -25,7 +25,7 @@ public class SeleniumTest {
             WebElement element = driver.findElement(By.name("q"));
 
             // Enter something to search for
-            element.sendKeys("Cheese!");
+            element.sendKeys("Queijo!");
 
             // Now submit the form
             element.submit();

@@ -1,8 +1,8 @@
-## Reforçando Conhecimentos em Testes de Software 
+## Reforçando Conhecimentos em Testes de Software utilizando as bibliotecas e ferramentas de testes:
 
-- REST Assured
-- Selenium
-- JMeter
+- [REST Assured](https://rest-assured.io/)
+- [Selenium](https://www.selenium.dev/documentation/webdriver/getting_started/)
+- [JMeter](https://jmeter.apache.org/usermanual/get-started.html)] 
 
 ## Requisitos do projeto:
 
