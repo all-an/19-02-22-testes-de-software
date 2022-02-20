@@ -119,6 +119,25 @@ public void getUserAssertingField() {
     }
 ```
 
+## Comparando atributos de determinado usuário:
+
+```java
+@Test
+public void getDeserializedBodyFields() {
+    String endpoint = "http://localhost:8080/users/1";
+    User user = new User(
+            1L,
+            "Allan Pereira Abrahão",
+            "allan8tech@gmail.com",
+            "988888888",
+            "123456"
+    );
+    User actualUser = given().when().get(endpoint).as(User.class);
+    assertThat(actualUser, samePropertyValuesAs(user));
+}
+```
+
+
 ### POST com o nome nulo
 
 ```java
@@ -144,6 +163,28 @@ java.lang.AssertionError: 1 expectation failed.
 JSON path name doesn't match.
 Expected: every item is not null
 Actual: <[Allan Pereira Abrahão, Alex Green, null]>
+```
+
+## Verificando Header:
+
+```java
+@Test
+public void verifyingHeader() {
+    String endpoint = "http://localhost:8080/users/";
+    given().when().get(endpoint).then().
+            assertThat().statusCode(200).
+            header("Content-Type", equalTo("application/json"));
+}
+```
+
+## Deserializando objeto:
+
+```java
+@Test
+public void getDeserializedBody() {s
+    String endpoint = "http://localhost:8080/users/1";
+    given().when().get(endpoint).as(User.class);
+}
 ```
 
 ## POST :

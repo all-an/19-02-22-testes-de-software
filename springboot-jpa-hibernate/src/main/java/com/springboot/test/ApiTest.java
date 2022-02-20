@@ -1,8 +1,10 @@
 package com.springboot.test;
 
+import com.springboot.entities.Product;
 import com.springboot.entities.User;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 import org.mockito.internal.matchers.NotNull;
@@ -101,11 +103,26 @@ public class ApiTest {
         String endpoint = "http://localhost:8080/users/";
         given().when().get(endpoint).then().
                 assertThat().statusCode(200).
-                body("name", everyItem(notNullValue()));
+                header("Content-Type", equalTo("application/json"));
     }
 
+    @Test
+    public void getDeserializedBody() {
+        String endpoint = "http://localhost:8080/users/1";
+        given().when().get(endpoint).as(User.class);
+    }
 
-
-
-
+    @Test
+    public void getDeserializedBodyFields() {
+        String endpoint = "http://localhost:8080/users/1";
+        User user = new User(
+                1L,
+                "Allan Pereira Abrahão",
+                "allan8tech@gmail.com",
+                "988888888",
+                "123456"
+        );
+        User actualUser = given().when().get(endpoint).as(User.class);
+        assertThat(actualUser, samePropertyValuesAs(user));
+    }
 }
