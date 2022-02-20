@@ -1,5 +1,14 @@
 ## 19-02-22-testes-de-software
 
+## Requisitos do projeto:
+
+- Java 11
+- JUnit 4
+- REST Assured 4.3.3
+- JUnit Jupiter 5.7
+- Spring Boot 2
+- H2 Database
+
 ## Minha api utilizada:
 
 - https://github.com/all-an/springboot-jpa-hibernate
@@ -36,20 +45,70 @@
 
 ```java
 @Test
-    public void getUsers() {
-        // http://localhost:8080/users/
-        String endpoint = "http://localhost:8080/users/";
-        var response = given().when().get(endpoint).then();
-        response.log().body();
-    }
+public void getUsers() {
+    // http://localhost:8080/users/
+    String endpoint = "http://localhost:8080/users/";
+    var response = given().when().get(endpoint).then();
+    response.log().body();
+}
 
-    @Test
-    public void getUser() {
-        // http://localhost:8080/users/
-        String endpoint = "http://localhost:8080/users/1";
-        var response = given().when().get(endpoint).then();
-        response.log().body();
-    }
+@Test
+public void getUser() {
+    // http://localhost:8080/users/
+    String endpoint = "http://localhost:8080/users/1";
+    var response = given().when().get(endpoint).then();
+    response.log().body();
+}
+```
+
+## assertThat().statusCode(200)
+
+```java
+@Test
+public void getUserAsserting() {
+    String endpoint = "http://localhost:8080/users/1";
+    given().when().get(endpoint).then().assertThat().statusCode(200);
+}
+```
+
+## Logging body response:
+
+```java
+@Test
+public void getUserAssertingResponseBody() {
+    // http://localhost:8080/users/
+    String endpoint = "http://localhost:8080/users/1"; // TODO entender queryParam()
+    given().when().get(endpoint).then().log().body();
+}
+```
+
+### Resposta esperada:
+
+```json
+{
+    "id": 1,
+    "name": "Allan Pereira Abrahão",
+    "email": "allan8tech@gmail.com",
+    "phone": "988888888",
+    "password": "123456"
+}
+```
+
+### Resposta por campo:
+
+```java
+@Test
+public void getUserAssertingField() {
+    // http://localhost:8080/users/
+    String endpoint = "http://localhost:8080/users/1";
+    given().when().get(endpoint).then().
+            assertThat().statusCode(200).
+            body("id", equalTo(1)).
+            body("name", equalTo("Maria Brown")).
+            body("email", equalTo("maria@gmail.com")).
+            body("phone", equalTo("988888888")).
+            body("password", equalTo("123456"));
+}
 ```
 
 ## POST :
