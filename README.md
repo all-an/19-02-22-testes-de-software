@@ -289,7 +289,7 @@ Actions action = new Actions(driver);
 action.dragAndDrop(image, box).build().perform();
 ```
 
-## CSS Selector
+## Selenium CSS Selector
 
 <p align="center">
         <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
@@ -309,7 +309,21 @@ action.dragAndDrop(image, box).build().perform();
 </a>
 </p>
 
-## Curso QA Julio de Lima 
+## Selenium find by child element and wildcards
+
+<p align="center">
+        <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
+        <img align="center" width="900" height="430"  src="/img/selenium-css-selector4.png" />
+</a>
+</p>
+
+<p align="center">
+        <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
+        <img align="center" width="847" height="441"  src="/img/selenium-css-selector5.png" />
+</a>
+</p>
+
+# Curso QA Julio de Lima 
 
 ### API do Julio de Lima e do Antonio Montanha utilizada para os Testes sob autorização de:
 
