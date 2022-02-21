@@ -32,7 +32,7 @@ public class SwitchToActiveWindow {
         }
 
         WebElement autocomplete = driver.findElement(By.className("_13NKt copyable-text selectable-text"));
-        autocomplete.sendKeys("Te amo !");
+        autocomplete.sendKeys("Teste !");
 
 
 

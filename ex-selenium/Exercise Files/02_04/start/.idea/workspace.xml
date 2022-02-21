@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c469e9-0a05-4ce7-9947-fb81dfe211eb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test/SwitchToActiveWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScrollToElement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ScrollToElement.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ScrollToElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02_05/end/test/SwitchToActiveWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_05/end/test/SwitchToActiveWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SwitchToActiveWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SwitchToActiveWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
