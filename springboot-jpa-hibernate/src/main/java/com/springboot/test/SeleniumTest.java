@@ -23,12 +23,13 @@ public class SeleniumTest {
 
             // Find the text input element by its name
             WebElement element = driver.findElement(By.name("q"));
+            WebElement element2 = driver.findElement(By.tagName("input"));
 
             // Enter something to search for
-            element.sendKeys("Queijo!");
+            element2.sendKeys("Queijo!");
 
             // Now submit the form
-            element.submit();
+            element2.submit();
 
             scanner.nextLine();
 

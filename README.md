@@ -221,6 +221,9 @@ public void getDeserializedBody() {s
 Scanner scanner = new Scanner(System.in);
 // Set the property for webdriver.chrome.driver to be the location to your local download of chromedriver
 System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
+//chromedriver deve ser a mesma versão do navegador chrome
+
+//https://chromedriver.storage.googleapis.com/index.html
 
 // Create new instance of ChromeDriver
 WebDriver driver = new ChromeDriver();
@@ -242,7 +245,13 @@ scanner.nextLine();
 driver.quit();
 ```
 
-## API do Julio de Lima e do Antonio Montanha utilizada para os Testes sob autorização de:
+## website utilizado nos testes selenium
+### https://formy-project.herokuapp.com/ 
+
+
+## Curso QA Julio de Lima 
+
+### API do Julio de Lima e do Antonio Montanha utilizada para os Testes sob autorização de:
 
 - https://github.com/AntonioMontanha
 - https://github.com/juliointest

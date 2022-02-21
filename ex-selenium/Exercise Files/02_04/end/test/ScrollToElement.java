@@ -6,8 +6,9 @@ import org.openqa.selenium.interactions.Actions;
 
 public class ScrollToElement {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
@@ -21,6 +22,7 @@ public class ScrollToElement {
         WebElement date = driver.findElement(By.id("date"));
         date.sendKeys("01/01/2020");
 
+        sc.nextLine();
         driver.quit();
     }
 }
