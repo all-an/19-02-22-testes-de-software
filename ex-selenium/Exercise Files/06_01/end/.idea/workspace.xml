@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a10f61c-945a-440c-86ff-2af7fcabf48d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02_08/end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_08/end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_02/end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_02/end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_02/end/test/Radiobuttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_02/end/test/Radiobuttons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_03/end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_03/end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_03/end/test/Datepicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_03/end/test/Datepicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_04/end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_04/end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_04/end/test/Dropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_04/end/test/Dropdown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_05/end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_05/end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_05/end/test/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_05/end/test/FileUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_02/end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_02/end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_02/end/test/Autocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_02/end/test/Autocomplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_03/end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_03/end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_03/end/test/Autocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_03/end/test/Autocomplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_02/end/test/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_02/end/test/Form.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +70,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_02/end" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />

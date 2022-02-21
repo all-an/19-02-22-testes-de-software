@@ -4,12 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.Scanner;
+
 import static org.junit.Assert.assertEquals;
 
 public class Form {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
@@ -20,6 +24,8 @@ public class Form {
         waitForAlertBanner(driver);
 
         assertEquals("The form was successfully submitted!", getAlertBannerText(driver));
+
+        sc.nextLine();
 
         driver.quit();
     }
