@@ -2,12 +2,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
+
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class Autocomplete {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
@@ -18,8 +21,10 @@ public class Autocomplete {
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-        WebElement autocompleteResult = driver.findElement(By.className("pac-item"));
+        WebElement autocompleteResult = driver.findElement(By.className("dismissButton"));
         autocompleteResult.click();
+
+        sc.nextLine();
 
         driver.quit();
     }

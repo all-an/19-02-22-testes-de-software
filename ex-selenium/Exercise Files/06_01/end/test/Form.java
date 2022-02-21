@@ -3,10 +3,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.Scanner;
+
 public class Form {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
@@ -28,6 +31,8 @@ public class Form {
         driver.findElement(By.id("datepicker")).sendKeys(Keys.RETURN);
 
         driver.findElement(By.cssSelector(".btn.btn-lg.btn-primary")).click();
+
+        sc.nextLine();
 
         driver.quit();
     }

@@ -323,6 +323,46 @@ action.dragAndDrop(image, box).build().perform();
 </a>
 </p>
 
+## Synchronization issues / 
+
+## Implicit  wait
+
+```java
+WebDriver driver = new ChromeDriver();
+
+driver.get("https://formy-project.herokuapp.com/autocomplete");
+
+WebElement autocomplete = driver.findElement(By.id("autocomplete"));
+autocomplete.sendKeys("1555 Park Blvd, Palo Alto, CA");
+
+driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+WebElement autocompleteResult = driver.findElement(By.className("pac-item"));
+autocompleteResult.click();
+
+driver.quit();
+```
+
+## Explicit wait
+
+```java
+System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
+
+WebDriver driver = new ChromeDriver();
+
+driver.get("https://formy-project.herokuapp.com/autocomplete");
+
+WebElement autocomplete = driver.findElement(By.id("autocomplete"));
+autocomplete.sendKeys("1555 Park Blvd, Palo Alto, CA");
+
+WebDriverWait wait = new WebDriverWait(driver, 10);
+WebElement autocompleteResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("dismissButton")));
+
+autocompleteResult.click();
+
+driver.quit();
+```
+
 # Curso QA Julio de Lima 
 
 ### API do Julio de Lima e do Antonio Montanha utilizada para os Testes sob autorização de:
