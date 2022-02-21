@@ -299,7 +299,7 @@ action.dragAndDrop(image, box).build().perform();
 
 <p align="center">
         <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
-        <img align="center" width="930" height="498"  src="/img/selenium-css-selector2.png" />
+        <img align="center" width="879" height="322"  src="/img/selenium-css-selector2.png" />
 </a>
 </p>
 
