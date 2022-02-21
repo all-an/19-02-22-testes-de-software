@@ -303,6 +303,12 @@ action.dragAndDrop(image, box).build().perform();
 </a>
 </p>
 
+<p align="center">
+        <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
+        <img align="center" width="899" height="426"  src="/img/selenium-css-selector3.png" />
+</a>
+</p>
+
 ## Curso QA Julio de Lima 
 
 ### API do Julio de Lima e do Antonio Montanha utilizada para os Testes sob autorização de:

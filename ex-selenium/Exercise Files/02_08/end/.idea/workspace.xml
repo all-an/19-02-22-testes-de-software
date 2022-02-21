@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6a17aab-13f7-4593-aa19-0b9032989923" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test/DragAndDropTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02_04/start/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_04/start/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02_07/start/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_07/start/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02_07/start/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_07/start/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02_07/start/ExecuteJavascript.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_07/start/ExecuteJavascript.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02_07/start/test/ExecuteJavascript.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_07/start/test/ExecuteJavascript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/DragAndDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DragAndDrop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../start/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../start/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start/test/DragAndDrop.java" beforeDir="false" />
-    </list>
+    <list default="true" id="c6a17aab-13f7-4593-aa19-0b9032989923" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
