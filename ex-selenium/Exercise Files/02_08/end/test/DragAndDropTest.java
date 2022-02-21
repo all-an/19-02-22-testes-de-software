@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class DragAndDrop {
+import java.util.Scanner;
+
+public class DragAndDropTest {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -15,6 +17,12 @@ public class DragAndDrop {
 
         driver.get("https://formy-project.herokuapp.com/dragdrop");
 
+        WebElement image = driver.findElement(By.id("image"));
+        WebElement box = driver.findElement(By.id("box"));
+
+        Actions action = new Actions(driver);
+
+        action.dragAndDrop(image, box).build().perform();
 
         sc.nextLine();
         driver.quit();

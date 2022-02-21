@@ -249,6 +249,60 @@ driver.quit();
 ### https://formy-project.herokuapp.com/ 
 
 
+## Opening a browser and interacting with a website.
+
+```java
+public class ExecuteJavascript {
+    public static void main(String[] args) throws InterruptedException {
+        Scanner sc = new Scanner(System.in);
+
+        System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("https://formy-project.herokuapp.com/modal");
+
+        WebElement modalButton = driver.findElement(By.id("modal-button"));
+        modalButton.click();
+
+        Thread.sleep(5000);
+
+        WebElement closeButton = driver.findElement(By.id("close-button"));
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click();", closeButton);
+
+        sc.nextLine();
+
+        driver.quit();
+    }
+}
+```
+
+## Drag and Drop:
+
+```java
+WebElement image = driver.findElement(By.id("image"));
+WebElement box = driver.findElement(By.id("box"));
+
+Actions action = new Actions(driver);
+
+action.dragAndDrop(image, box).build().perform();
+```
+
+## CSS Selector
+
+<p align="center">
+        <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
+        <img align="center" width="930" height="498"  src="/img/selenium-css-selector1.png" />
+</a>
+</p>
+
+<p align="center">
+        <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
+        <img align="center" width="930" height="498"  src="/img/selenium-css-selector2.png" />
+</a>
+</p>
+
 ## Curso QA Julio de Lima 
 
 ### API do Julio de Lima e do Antonio Montanha utilizada para os Testes sob autorização de:
