@@ -419,6 +419,33 @@ public class Form {
 }
 ```
 
+# JMeter 
+
+```bash
+unix
+sh jmeter.sh  
+sh jmeter.sh -n -t 01-teste1.jmx
+
+windows
+.\jmeter.bat -n -t 01-teste1.jmx
+```
+
+> ./jmeter.bat
+## Para abrir o JMeter somente execute o arquivo jmeter.bat // Windows Batch File
+
+<p align="center">
+        <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
+        <img align="center" width="869" height="459"  src="/img/jmeter1.png" />
+</a>
+</p>
+
+<p align="center">
+        <a href="https://www.linkedin.com/in/allan-pereira-abrahao/">
+        <img align="center" width="833" height="43"  src="/img/jmeter2.png" />
+</a>
+</p>
+
+
 # Curso QA Julio de Lima 
 
 ### API do Julio de Lima e do Antonio Montanha utilizada para os Testes sob autorização de:
